@@ -14,7 +14,7 @@ COPY . .
 RUN npm rebuild bcrypt --build-from-source
 
 # Відкриваємо порт
-EXPOSE 5000
+EXPOSE 4000
 
 # Запускаємо сервер
 CMD ["npm", "start"]

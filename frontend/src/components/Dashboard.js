@@ -6,7 +6,7 @@ const Dashboard = () => {
   useUserTracking();
 
   useEffect(() => {
-    fetch("http://localhost:5000/analytics")
+    fetch("http://localhost:4000/analytics")
       .then((res) => res.json())
       .then((stats) => setData(stats))
       .catch((error) => console.error("Error fetching analytics:", error));

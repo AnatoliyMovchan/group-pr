@@ -4,7 +4,7 @@ import { io } from "socket.io-client";
 const WebSocketContext = createContext();
 
 export const WebSocketProvider = ({ children }) => {
-  const socket = io("http://localhost:5000");
+  const socket = io("http://localhost:4000");
 
   useEffect(() => {
     console.log("WebSocket connected");

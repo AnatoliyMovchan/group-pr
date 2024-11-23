@@ -29,7 +29,7 @@ const StatisticsPage = () => {
 
   const fetchStatistics = async () => {
     try {
-      const response = await fetch("http://localhost:5000/events/statistics");
+      const response = await fetch("http://localhost:4000/events/statistics");
       if (!response.ok) {
         throw new Error("Failed to fetch statistics");
       }
@@ -49,7 +49,7 @@ const StatisticsPage = () => {
   useEffect(() => {
     fetchStatistics();
 
-    const socket = io("http://localhost:5000");
+    const socket = io("http://localhost:4000");
 
     socket.on("updateStatistics", (data) => {
       console.log("Real-time data received:", data);

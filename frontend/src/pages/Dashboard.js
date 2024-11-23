@@ -5,7 +5,7 @@ const Dashboard = () => {
   const [chartData, setChartData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/analytics/events-summary")
+    fetch("http://localhost:4000/analytics/events-summary")
       .then((res) => res.json())
       .then((data) => {
         setChartData({

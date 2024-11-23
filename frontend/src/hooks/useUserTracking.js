@@ -14,7 +14,7 @@ const useUserTracking = () => {
       timestamp: new Date().toISOString(),
     };
 
-    fetch("http://localhost:5000/events/add", {
+    fetch("http://localhost:4000/events/add", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(event),

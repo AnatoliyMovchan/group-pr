@@ -1,0 +1,44 @@
+
+    <html>
+    <head>
+        <title>Kafka Event Generation Test Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; }
+            h1 { color: #2C3E50; }
+            p { font-size: 14px; }
+            table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+            table, th, td { border: 1px solid #ddd; }
+            th, td { padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            .log { color: red; }
+        </style>
+    </head>
+    <body>
+        <h1>Kafka Event Generation Test Report</h1>
+        <p><strong>Test Start Time:</strong> 2024-11-23 11:03:34.122645</p>
+        <p><strong>Test End Time:</strong> 2024-11-23 11:24:14.142069</p>
+        <p><strong>Total Events Produced:</strong> 100000</p>
+        <p><strong>Elapsed Time:</strong> 0:20:40.019424 seconds</p>
+        
+        <h2>Kafka Logs Analysis</h2>
+        <h3>Errors/Warnings in Kafka Logs</h3>
+        <ul>
+    <li>No errors or warnings found in the logs.</li>
+        </ul>
+
+        <h2>Event Generation Details</h2>
+        <p>Events were generated using the Faker library and sent to the Kafka topic <strong>user-events</strong>.</p>
+        <h3>Generated Event Structure</h3>
+        <pre>
+        {
+            "sessionId": "UUID",
+            "userId": 123,
+            "page": "homepage",
+            "actionType": "click",
+            "data": {"details": "Test Kafka"},
+            "timestamp": "2024-11-23T12:34:56Z"
+        }
+        </pre>
+    </body>
+    </html>
+    
